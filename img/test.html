@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      #background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background">
+      <img id="image1" src="home-bg-slider-img1.jpg" alt="Background Image 1" />
+      <img id="image2" src="home-bg-slider-img2.jpg" alt="Background Image 2" />
+    </div>
+
+    <script>
+      const background = document.getElementById("background");
+      const image1 = document.getElementById("image1");
+      const image2 = document.getElementById("image2");
+
+      // Array of image URLs
+      const images = ["home-bg-slider-img1.jpg", "home-bg-slider-img2.jpg"];
+      let currentIndex = 0;
+
+      function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length;
+        const nextImage = images[currentIndex];
+
+        // Change the image source
+        image1.src = image2.src = nextImage;
+      }
+
+      // Change the background every 5 seconds (5000 milliseconds)
+      setInterval(changeBackground, 3000);
+    </script>
+  </body>
+</html>
