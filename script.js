@@ -12,7 +12,7 @@ function changeBackground() {
 }
 
 // Change the background every 5 seconds (5000 milliseconds)
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 3000);
 
 // for navbar
 window.addEventListener("scroll", function () {

@@ -129,3 +129,14 @@ a {
   height: 100vh;
   width: 100vw;
 }
+/* about section */
+
+.first,
+.second {
+  height: 70vh;
+  width: 100%;
+  background: black;
+}
+.second {
+  background: red;
+}
