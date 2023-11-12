@@ -137,6 +137,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 20px;
 }
 .first,
 .second {
@@ -217,4 +219,26 @@ a {
 .about-content button:hover {
   background-color: #26253a;
   color: #fff;
+}
+/* trainer section */
+.trainer {
+  height: 100vh;
+  width: 100vw;
+  background: #f9f9f9;
+  padding-top: 100px;
+}
+
+.trainer-heading {
+  text-align: center;
+}
+.trainer-heading h3 {
+  font-size: 30px;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+.trainer-heading p {
+  color: #707070;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
 }
