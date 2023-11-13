@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .trainer_card {
+        width: 200px;
+        height: 200px;
+        background: #d3aeae;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.4s ease;
+      }
+
+      .trainer_card:hover {
+        background: url("img/home-bg-slider-img2.jpg") center center/cover;
+      }
+
+      h2 {
+        margin: 0; /* Reset margin for cleaner layout */
+      }
+
+      .image {
+        position: absolute;
+        top: 40px; /* Initial position 40px below the card */
+        left: 50%;
+        transform: translateX(-50%);
+        transition: top 0.5s ease-in-out;
+      }
+
+      .trainer_card:hover .image {
+        top: 0; /* Reveal the image on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="trainer_card">
+      <h2>Data here</h2>
+      <div class="image">
+        <img src="img/trainer-image.jpg" alt="Trainer image" />
+      </div>
+    </div>
+  </body>
+</html>

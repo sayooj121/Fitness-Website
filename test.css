@@ -13,15 +13,15 @@ body {
   background: #222;
 }
 
-.trainer_cards {
+.blog_cards {
   display: flex;
-  width: 70%;
+  /* width: 70%; */
   justify-content: space-between;
 }
 
-.trainer_card {
-  width: 900px;
-  height: 400px;
+.blog_card {
+  width: 550px;
+  height: 250px;
   padding: 2rem 1rem;
   background: #fff;
   position: relative;
@@ -29,70 +29,40 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  margin-left: 10px;
-  transition: all 0.5s ease-in-out;
+  margin-left: 30px;
+  transition: all 0.9s ease-in-out;
 }
 
-.trainer_card:first-child {
+.blog_card:first-child {
   margin-left: 0;
 }
 
-.trainer_card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: 0.5s all;
-  opacity: 0;
+.blog_card:hover {
+  color: #fff;
+  background: url("img/home-bg-slider-img2.jpg") center center/cover;
+  color: #fff;
 }
-
-.trainer_card:hover:before {
-  opacity: 1;
+.blog-date {
+  color: #999;
+  font-weight: bold;
+  font-size: 12px;
 }
-
-.trainer_card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+.blog-title {
+  margin-top: 20px;
 }
-
-.trainer_card .trainer_info {
-  position: relative;
-  height: 355px;
-  width: 260px;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  display: none;
-  opacity: 0;
-
-  transition: all 1s ease-in;
+.blog-title a {
+  color: #606060;
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 20px;
 }
-
-.trainer_card:hover .trainer_info {
-  opacity: 1;
-
-  background: rgba(38, 37, 58, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-}
-
-.trainer_card .trainer_info h2 {
-  font-size: 18px;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-.trainer_card .trainer_info h3 {
-  font-size: 16px;
+#blog-author {
+  color: #606060;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
