@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>Quotes Carousel</title>
+  </head>
+  <body>
+    <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Section 1 -->
+        <div class="carousel-item active custom-carousel-item">
+          <div class="container">
+            <i class="fas fa-quote-left"></i>
+            <h3>
+              Sed dapibus rutrum lobortis. Sed nec interdum nunc, quis sodales
+              ante. Maecenas volutpat congue.
+            </h3>
+            <h4>Mark Otto ( New Cyclist )</h4>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="carousel-item custom-carousel-item">
+          <div class="container">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">Quote 2</p>
+              <footer class="blockquote-footer">Author 2</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="carousel-item custom-carousel-item">
+          <div class="container">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">Quote 3</p>
+              <footer class="blockquote-footer">Author 3</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="carousel-item custom-carousel-item">
+          <div class="container">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">Quote 4</p>
+              <footer class="blockquote-footer">Author 4</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Round Buttons for Navigation -->
+      <div class="carousel-controls">
+        <button
+          type="button"
+          data-bs-target="#quoteCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          onclick="changeBackgroundColor(this)"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#quoteCarousel"
+          data-bs-slide-to="1"
+          onclick="changeBackgroundColor(this)"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#quoteCarousel"
+          data-bs-slide-to="2"
+          onclick="changeBackgroundColor(this)"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#quoteCarousel"
+          data-bs-slide-to="3"
+          onclick="changeBackgroundColor(this)"
+        ></button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+      .custom-carousel-item {
+        height: 60vh;
+      }
+
+      /* Styling for Round Navigation Buttons */
+      .carousel-controls {
+        bottom: 10px;
+        text-align: center;
+      }
+
+      .carousel-controls button {
+        background-color: white;
+        border: 1px solid #000; /* Add a small border */
+        width: 12px; /* Decrease the width */
+        height: 12px; /* Decrease the height */
+        border-radius: 20px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .carousel-controls .active {
+        background-color: black;
+      }
+    </style>
+
+    <script>
+      function changeBackgroundColor(element) {
+        // Remove the 'active' class from all buttons
+        document
+          .querySelectorAll(".carousel-controls button")
+          .forEach((btn) => btn.classList.remove("active"));
+
+        // Add the 'active' class to the clicked button
+        element.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

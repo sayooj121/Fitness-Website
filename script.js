@@ -23,3 +23,13 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("visible");
   }
 });
+// carosoul items
+function changeBackgroundColor(element) {
+  // Remove the 'active' class from all buttons
+  document
+    .querySelectorAll(".carousel-controls button")
+    .forEach((btn) => btn.classList.remove("active"));
+
+  // Add the 'active' class to the clicked button
+  element.classList.add("active");
+}
