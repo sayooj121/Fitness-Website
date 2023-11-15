@@ -670,3 +670,42 @@ a {
   font-weight: 600;
   font-size: 18px;
 }
+.footer {
+  height: 70vh;
+  background: #26253a;
+  color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer-sections {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer-section1 {
+  max-width: 300px;
+}
+.footer-sections h2 {
+  font-size: 30px;
+  letter-spacing: 6px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer p {
+  text-align: center;
+  margin-top: 40px;
+  color: #707070;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  transition: all 0.4s ease-in-out;
+}
+.footer p:hover {
+  color: #fff;
+}
